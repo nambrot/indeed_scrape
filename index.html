@@ -86,6 +86,7 @@
 
     <script type="text/javascript" src="http://platform.linkedin.com/in.js">
       api_key: enqnez8rx2dh
+      authorize: true
     </script>
   </head>
   
@@ -126,12 +127,14 @@ designer,"New York City",
       <input type="text" id="locations" placeholder="boston, new york, san francisco" value='boston, san francisco'>
     </div>
     <div class="row">
+      <script type="IN/Login"></script>
       <a href="#" class="button" id="scrape_combinations_button">Scrape all combinations of keywords and locations</a>
     </div>
     <div class="row">
       <h3>Output:</h3>
       <p id="output_combinations"></p>
-    </div>    
+      <p id="linkedin_ids"></p>
+    </div> 
     <script>
 
     function unique(list) {
